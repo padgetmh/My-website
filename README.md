@@ -244,12 +244,7 @@
 
         <div class="skills-container">
 
-            <div class="skill-box">
-              <link rel="stylesheet"
-                href="https://cdnjs.cloudflare.com/ajax/font-awesome/6.5.1/css/all.min.css"
-              <i class = "fa-brands fa-html5"></i>
-              <p>HTML</p>
-              </div>
+            <div class="skill-box">HTML</div>
             <div class="skill-box">CSS</div>
             <div class="skill-box">JavaScript</div>
             <div class="skill-box">Responsive Design</div>
