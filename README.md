@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Micaiah Padgett | Portfolio</title>
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
 
@@ -16,23 +23,24 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif ;
-            background-color: #ececee;
-            color: cream
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #DAD5CF;
+            color: #395A7F;
             line-height: 1.6;
         }
 
         /* NAVIGATION */
 
         nav {
-            background-color: #ececee;
+            background-color: #DAD5CF;
             padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
+            z-index: 1000;
         }
 
         nav h1 {
@@ -47,12 +55,13 @@
 
         nav a {
             text-decoration: none;
-            color: #233;
+            color: #395A7F;
             font-weight: bold;
+            transition: 0.3s;
         }
 
         nav a:hover {
-            color: #ececee;
+            color: #7fa8d1;
         }
 
         /* HERO SECTION */
@@ -69,29 +78,30 @@
         }
 
         .hero-content h2 {
-            font-size: 50px;
+            font-size: 55px;
             margin-bottom: 15px;
         }
 
         .hero-content p {
-            font-size: 20px;
+            font-size: 22px;
             margin-bottom: 25px;
         }
 
         .btn {
-            background-color: white;
-            color: #0077ff;
+            background-color: #DAD5CF;
+            color: #395a7f;
             padding: 12px 24px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 6px;
             font-weight: bold;
+            transition: 0.3s;
         }
 
         .btn:hover {
-            background-color: #eaaea;
+            background-color: white;
         }
 
-        /* GENERAL SECTION STYLING */
+        /* GENERAL SECTION */
 
         section {
             padding: 80px 10%;
@@ -118,15 +128,35 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 30px;
+            gap: 20px;
+            margin-top: 40px;
         }
 
         .skill-box {
-            background-color: white;
-            padding: 15px 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            background: linear-gradient(to right, #a3cae9, #395a7f);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+            width: 150px;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+
+            color: white;
+
+            transition: transform 0.3s;
+        }
+
+        .skill-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-box i {
+            font-size: 40px;
         }
 
         /* PROJECTS */
@@ -139,10 +169,16 @@
         }
 
         .project-card {
-            background-color: white;
+            background: linear-gradient(to right, #a3cae9, #395a7f);
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            color: white;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
         }
 
         .project-card img {
@@ -158,8 +194,9 @@
         }
 
         .contact a {
-            color: #0077ff;
+            color: #395A7F;
             text-decoration: none;
+            font-weight: bold;
         }
 
         /* FOOTER */
@@ -176,7 +213,11 @@
         @media (max-width: 768px) {
 
             .hero-content h2 {
-                font-size: 36px;
+                font-size: 38px;
+            }
+
+            .hero-content p {
+                font-size: 18px;
             }
 
             nav {
@@ -198,6 +239,7 @@
     <!-- NAVBAR -->
 
     <nav>
+
         <h1>Micaiah Padgett</h1>
 
         <ul>
@@ -206,6 +248,7 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+
     </nav>
 
     <!-- HERO SECTION -->
@@ -213,30 +256,34 @@
     <section class="hero">
 
         <div class="hero-content">
+
             <h2>Architecture Student & Aspiring Web Developer</h2>
 
             <p>
-                Currently Learning
+                Exploring digital design, architecture, and modern web experiences.
             </p>
 
             <a href="#projects" class="btn">View My Work</a>
+
         </div>
 
     </section>
 
-    <!-- ABOUT SECTION -->
+    <!-- ABOUT -->
 
     <section class="about" id="about">
 
         <h2>About Me</h2>
 
         <p>
-            Hi my name is Micaiah, I'm currently exploring how digital design and architecture intersect through web development, visual storytelling, and user-centered experiences.  
+            Hi, my name is Micaiah. I'm currently exploring how digital design and
+            architecture intersect through web development, visual storytelling,
+            and user-centered experiences.
         </p>
 
     </section>
 
-    <!-- SKILLS SECTION -->
+    <!-- SKILLS -->
 
     <section id="skills">
 
@@ -244,17 +291,36 @@
 
         <div class="skills-container">
 
-            <div class="skill-box">HTML</div>
-            <div class="skill-box">CSS</div>
-            <div class="skill-box">JavaScript</div>
-            <div class="skill-box">Responsive Design</div>
-            <div class="skill-box">UI Design</div>
+            <div class="skill-box">
+                <i class="fa-brands fa-html5"></i>
+                HTML
+            </div>
+
+            <div class="skill-box">
+                <i class="fa-brands fa-css3-alt"></i>
+                CSS
+            </div>
+
+            <div class="skill-box">
+                <i class="fa-brands fa-js"></i>
+                JavaScript
+            </div>
+
+            <div class="skill-box">
+                <i class="fa-solid fa-mobile-screen"></i>
+                Responsive Design
+            </div>
+
+            <div class="skill-box">
+                <i class="fa-solid fa-palette"></i>
+                UI Design
+            </div>
 
         </div>
 
     </section>
 
-    <!-- PROJECTS SECTION -->
+    <!-- PROJECTS -->
 
     <section id="projects">
 
@@ -264,7 +330,8 @@
 
             <div class="project-card">
 
-                <img src="https://via.placeholder.com/400x250" alt="Project Image">
+                <img src="https://via.placeholder.com/400x250"
+                    alt="Portfolio Website">
 
                 <h3>Portfolio Website</h3>
 
@@ -276,7 +343,8 @@
 
             <div class="project-card">
 
-                <img src="https://via.placeholder.com/400x250" alt="Project Image">
+                <img src="https://via.placeholder.com/400x250"
+                    alt="Future Project">
 
                 <h3>Future Project</h3>
 
@@ -290,7 +358,7 @@
 
     </section>
 
-    <!-- CONTACT SECTION -->
+    <!-- CONTACT -->
 
     <section class="contact" id="contact">
 
@@ -300,7 +368,9 @@
 
         <p>
             GitHub:
-            <a href="#">github.com/padgetmh</a>
+            <a href="https://github.com/padgetmh" target="_blank">
+                github.com/padgetmh
+            </a>
         </p>
 
     </section>
@@ -314,4 +384,5 @@
     </footer>
 
 </body>
+
 </html>
