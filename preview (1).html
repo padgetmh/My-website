@@ -1,1 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fran's Flowers | Boutique Flower Shop in San Francisco</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
+  <body>
+    <header>
+      <div class="header-content">
+        <h1><span class="accent">Fran's</span> Flowers</h1>
+        <p class="tagline">Brightening San Francisco since 1995</p>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button
+          class="nav-toggle"
+          aria-controls="main-navigation"
+          aria-expanded="false"
+          aria-label="Open navigation"
+        >
+          <span class="hamburger" aria-hidden="true">☰</span>
+        </button>
+        <ul id="main-navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-fran%20(1).html">About</a></li>
+          <li><a href="#specials">Specials</a></li>
+          <li><a href="#visit-us">Visit Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="hero-container">
+      <img
+        src="img/fran (1).png"
+        alt="Francine Miller, owner of Fran's Flowers"
+        class="hero-img"
+      />
+    </div>
+
+    <main>
+      <section id="about-us" class="about-us">
+        <h2><span class="accent">About</span> Us</h2>
+        <p>
+          Fran's Flowers was founded in 1995 by Francine Miller to share joy,
+          beauty, and connection with the Mission District of San Francisco.
+          Thirty years later we remain rooted in that vision, brightening lives
+          with every bouquet while supporting our community. Ten percent of each
+          sale continues to fund efforts to fight homelessness across the Bay
+          Area.
+        </p>
+        <p>Thank you for helping us grow kindness one flower at a time.</p>
+      </section>
+
+      <section class="testimonials" aria-labelledby="testimonials-heading">
+        <h2 id="testimonials-heading">
+          <span class="accent">Customer</span> Testimonials
+        </h2>
+        <div class="testimonials-list">
+          <article class="testimonial-card">
+            <blockquote>
+              <p>
+                "Fran's picked the perfect bouquet for my mother's birthday —
+                fresh, cheerful, and delivered right on time. The staff were so
+                kind and helpful. We'll definitely be back!"
+              </p>
+            </blockquote>
+            <p class="testimonial-author">— Maria G., Mission District</p>
+          </article>
+
+          <article class="testimonial-card">
+            <blockquote>
+              <p>
+                "Lovely selection and great prices. The Sunflower Delight was
+                even more beautiful in person. Great community values too —
+                happy to support a local shop."
+              </p>
+            </blockquote>
+            <p class="testimonial-author">— James R., San Francisco</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="specials" class="specials">
+        <h2><span class="accent">Weekly</span> Specials</h2>
+        <div class="specials-slider">
+          <button
+            type="button"
+            class="slider-control prev"
+            aria-label="Previous special"
+            aria-controls="specials-track"
+          >
+            ‹
+          </button>
+          <div class="slider-window">
+            <div id="specials-track" class="specials-track">
+              <article class="special-offer">
+                <img src="img/potted_plant.png" alt="Ceramic Potted Herbs" />
+                <h3>Ceramic Potted Herbs</h3>
+                <p class="price-now">$7.99</p>
+                <p class="price-was">Was $17.99</p>
+              </article>
+
+              <article class="special-offer">
+                <img src="img/wild_flowers.png" alt="Wildflower Explosion" />
+                <h3>Wildflower Explosion</h3>
+                <p class="price-now">$19.99</p>
+                <p class="price-was">Was $29.99</p>
+              </article>
+
+              <article class="special-offer">
+                <img src="img/sunflowers.png" alt="Sunflower Delight" />
+                <h3>Sunflower Delight</h3>
+                <p class="price-now">$12.99</p>
+                <p class="price-was">Was $19.99</p>
+              </article>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="slider-control next"
+            aria-label="Next special"
+            aria-controls="specials-track"
+          >
+            ›
+          </button>
+        </div>
+      </section>
+
+      <section class="seasonal-picks">
+        <h2><span class="accent">Seasonal</span> Picks</h2>
+        <div class="seasonal-card">
+          <img src="img/sunflowers.png" alt="Sunflower Delight bouquet" />
+          <div class="seasonal-copy">
+            <h3>Sunflower Delight Bouquet</h3>
+            <p>
+              A cheerful bundle of sunflowers and soft greenery, perfect for
+              sending warm smiles across the city.
+            </p>
+            <p class="seasonal-detail">Only here ‘til October.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="visit-us" class="visit-us">
+        <h2><span class="accent">Visit</span> Us</h2>
+        <div class="contact-info">
+          <p>Come in and say hi!</p>
+          <div class="address-block">
+            <address>123 Valencia Street, San Francisco, CA 94103</address>
+          </div>
+          <div class="phone-block">
+            <p>Call us at <a href="tel:+1234567890">123-456-7890</a></p>
+          </div>
+        </div>
+        <iframe
+          title="Map showing Fran's Flowers at 123 Valencia Street, San Francisco"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.144965296929!2d-122.4230293!3d37.7689366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e3a37128e21%3A0xf85bfc7fef295b98!2s123%20Valencia%20St%2C%20San%20Francisco%2C%20CA%2094103!5e0!3m2!1sen!2sus!4v1722345678901!5m2!1sen!2sus"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-top">
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-fran%20(1).html">About</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="social-links" aria-label="Social media">
+            <a href="#" class="social-link" aria-label="Follow us on Instagram">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+                focusable="false"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="3"
+                  y="3"
+                  width="18"
+                  height="18"
+                  rx="5"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="3"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+              </svg>
+            </a>
+
+            <a href="#" class="social-link" aria-label="Follow us on Facebook">
+              <svg
+                width="18"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+                focusable="false"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 8h2.5V4.5H15c-1.9 0-3.5 1.6-3.5 3.5V11H9.5v3h2V20h3v-6h2.1l.4-3H14V8z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+
+            <a href="#" class="social-link" aria-label="Follow us on X">
+              <svg
+                width="20"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+                focusable="false"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 5.5c-.6.3-1.2.5-1.9.6.7-.4 1.2-1 1.4-1.8-.6.4-1.4.7-2.1.9C18.6 4 17.8 3.5 17 3.5c-1.5 0-2.7 1.2-2.7 2.7 0 .2 0 .4.1.6-2.3-.1-4.4-1.2-5.8-2.8-.2.4-.4.9-.4 1.4 0 1 .5 1.9 1.3 2.4-.5 0-1-.2-1.5-.4v.1c0 1.3.9 2.4 2.1 2.6-.4.1-.8.2-1.3.2-.3 0-.6 0-.9-.1.6 1.9 2.4 3.3 4.6 3.3-1.7 1.3-3.9 2.1-6.2 2.1-.4 0-.8 0-1.2-.1 2.3 1.4 5.1 2.2 8 2.2 9.6 0 14.9-8 14.9-14.9v-.7c1-.7 1.8-1.6 2.4-2.6-.9.4-1.9.6-2.9.8z"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Fran's Flowers LLC.</p>
+          <p>Brightening lives one flower at a time</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const track = document.querySelector(".specials-track");
+      const slides = Array.from(document.querySelectorAll(".special-offer"));
+      const prevBtn = document.querySelector(".slider-control.prev");
+      const nextBtn = document.querySelector(".slider-control.next");
+      let currentIndex = 0;
+
+      function getSlideGap() {
+        const gap = getComputedStyle(track).gap;
+        return gap ? parseInt(gap, 10) : 20;
+      }
+
+      function updateSlider() {
+        const slideWidth = slides[0].offsetWidth;
+        const gap = getSlideGap();
+        track.style.transform = `translateX(-${currentIndex * (slideWidth + gap)}px)`;
+        prevBtn.disabled = currentIndex === 0;
+        nextBtn.disabled = currentIndex === slides.length - 1;
+      }
+
+      prevBtn.addEventListener("click", () => {
+        if (currentIndex > 0) {
+          currentIndex -= 1;
+          updateSlider();
+        }
+      });
+
+      nextBtn.addEventListener("click", () => {
+        if (currentIndex < slides.length - 1) {
+          currentIndex += 1;
+          updateSlider();
+        }
+      });
+
+      window.addEventListener("resize", updateSlider);
+      updateSlider();
+
+      // Responsive nav toggle
+      (function () {
+        const nav = document.querySelector(".main-nav");
+        const toggle = document.querySelector(".nav-toggle");
+        const menu = document.getElementById("main-navigation");
+
+        function setExpanded(val) {
+          toggle.setAttribute("aria-expanded", String(val));
+          if (val) nav.classList.add("open");
+          else nav.classList.remove("open");
+        }
+
+        toggle.addEventListener("click", () => {
+          const expanded = toggle.getAttribute("aria-expanded") === "true";
+          setExpanded(!expanded);
+        });
+
+        // Close menu when a link is clicked (mobile)
+        menu.addEventListener("click", (e) => {
+          if (e.target.tagName === "A" && window.innerWidth < 720)
+            setExpanded(false);
+        });
+
+        // Close on escape
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") setExpanded(false);
+        });
+
+        // Ensure menu is visible on large screens
+        window.addEventListener("resize", () => {
+          if (window.innerWidth >= 720) {
+            toggle.setAttribute("aria-expanded", "false");
+            nav.classList.remove("open");
+            menu.style.display = "";
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
